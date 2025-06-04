@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELEPORT</title>
+    <!-- css読み込み -->
+    <link rel="stylesheet" href="assets/css/style.css?ver=1211">
+    <!-- ファビコン -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="assets/img/logo.png" alt="Teleport Logo" class="logo">
+        </div>
+    </header>
+
+    <div class="tp-contact is-cream-bg">
+        <h2 class="tp-contact__ttl">メンバーシップ加入</h2>
+
+        <form action="/" method="post">
+            <label for="plan">プラン選択<span class="hissu">【必須】</span></label>
+            <select id="plan" name="plan" required>
+                <option value=""></option>
+                <option value="STANDARD PLAN">STANDARD PLAN</option>
+                <option value="PREMIUM PLAN">PREMIUM PLAN</option>
+            </select>
+
+            <label for="plan">決済期間選択<span class="hissu">【必須】</span></label>
+            <select id="plan" name="plan" required>
+                <option value=""></option>
+                <option value="1MONTH">1MONTH</option>
+                <option value="1YEAR">1YEAR</option>
+            </select>
+
+
+            <button type="submit" class="submit">決済</button>
+        </form>
+    </div>
+
+
+    <footer class="tp-footer">
+        <div class="tp-footer__inner">
+            <div class="tp-footer__logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="TELEPORTロゴ" width="150">
+                </a>
+            </div>
+
+            <div class="tp-footer__company">
+                <p>運営会社：TELEPORT株式会社</p>
+                <p>代表者：山田 太郎</p>
+                <p>住所：〒123-4567 東京都渋谷区渋谷1-1-1 TELEPORTビル</p>
+                <p>メール：<a href="mailto:info@teleport.co.jp">info@teleport.co.jp</a></p>
+            </div>
+
+            <div class="tp-footer__copy">
+                <p>&copy; 2025 TELEPORT. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,402 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>TELEPORT</title>
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- --------------------------------------------------------------- -->
+  <!--                              HEADER                             -->
+  <!-- --------------------------------------------------------------- -->
+  <!-- header読み込み -->
+  <!-- <div id="header-placeholder"></div>　不可 -->
+  <header class="header">
+    <div class="header-left">
+      <a href="index.html"><img src="assets/img/logo.png" alt="Teleport Logo" class="logo"></a>
+    </div>
+
+    <!-- ハンバーガー メニュー構造 -->
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <!-- ナビゲーションメニュー本体 -->
+    <div class="menu__box">
+      <ul class="menu__inner">
+        <li><a class="menu__item" href="index.html">TOP</a></li>
+        <li><a class="menu__item" href="qa.html">Q & A</a></li>
+        <li><a class="menu__item" href="contact.html">トライアル</a></li>
+        <li class="menu__contact">
+          <a class="menu__item" href="payment.html" target="_blank" rel="noopener">メンバーシップ</a>
+        </li>
+      </ul>
+    </div>
+    <p class="menu__bg"></p>
+  </header>
+
+  <!-- --------------------------------------------------------------- -->
+  <!--                              TP                                 -->
+  <!-- --------------------------------------------------------------- -->
+  <section class="hero-section">
+    <!-- 背景動画 -->
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="assets/video/hero-bg.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- オーバーレイとコンテンツ -->
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">日本のテレビ番組を<br><span class="highlight">世界へ届けよう！</span></h1>
+      <p class="hero-subtitle">Flexible worldwide distribution of Japanese TV programs</p>
+
+      <div class="hero-buttons">
+        <a href="contact.html" class="button filled">トライアル</a>
+        <a href="payment.html" class="button outlined">サブスク購入</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------------------------------------------------- -->
+  <!--     タイトル１　観たいすべてが、ここに。                           -->
+  <!-- --------------------------------------------------------------- -->
+  <div class="tp-all__ttl">
+    <h2>
+      <p style="font-size: 24px;">観たいすべてが、ここに。</p>お笑い・スポーツ・アニメ・ドラマ・ニュース
+    </h2>
+  </div>
+
+  <!-- --------------------------------------------------------------- -->
+  <!--                              CAROUSEL                           -->
+  <!-- --------------------------------------------------------------- -->
+  <section class="image-carousel">
+    <!-- 1段目 -->
+    <div class="carousel-track track-1">
+      <!-- 画像を2セット並べてループ風にする -->
+      <img src="assets/img/01.png" alt="TV Show" />
+      <img src="assets/img/02.jpg" alt="TV Show" />
+      <img src="assets/img/03.jpg" alt="TV Show" />
+      <img src="assets/img/04.jpg" alt="TV Show" />
+      <img src="assets/img/05.jpg" alt="TV Show" />
+      <img src="assets/img/06.jpg" alt="TV Show" />
+      <img src="assets/img/07.jpg" alt="TV Show" />
+      <img src="assets/img/08.jpg" alt="TV Show" />
+      <img src="assets/img/09.jpg" alt="TV Show" />
+      <img src="assets/img/10.jpg" alt="TV Show" />
+      <img src="assets/img/11.jpg" alt="TV Show" />
+      <img src="assets/img/12.jpg" alt="TV Show" />
+      <!-- duplicate set for seamless loop -->
+      <img src="assets/img/01.png" alt="TV Show" />
+      <img src="assets/img/02.jpg" alt="TV Show" />
+      <img src="assets/img/03.jpg" alt="TV Show" />
+      <img src="assets/img/04.jpg" alt="TV Show" />
+      <img src="assets/img/05.jpg" alt="TV Show" />
+      <img src="assets/img/06.jpg" alt="TV Show" />
+      <img src="assets/img/07.jpg" alt="TV Show" />
+      <img src="assets/img/08.jpg" alt="TV Show" />
+      <img src="assets/img/09.jpg" alt="TV Show" />
+      <img src="assets/img/10.jpg" alt="TV Show" />
+      <img src="assets/img/11.jpg" alt="TV Show" />
+      <img src="assets/img/12.jpg" alt="TV Show" />
+    </div>
+
+    <!-- 2段目（逆方向） -->
+    <div class="carousel-track track-2 reverse">
+      <!-- 画像を2セット並べてループ風にする -->
+      <img src="assets/img/25.jpg" alt="TV Show" />
+      <img src="assets/img/26.jpg" alt="TV Show" />
+      <img src="assets/img/27.jpg" alt="TV Show" />
+      <img src="assets/img/28.jpg" alt="TV Show" />
+      <img src="assets/img/29.jpg" alt="TV Show" />
+      <img src="assets/img/30.jpg" alt="TV Show" />
+      <img src="assets/img/31.jpg" alt="TV Show" />
+      <img src="assets/img/32.jpg" alt="TV Show" />
+      <img src="assets/img/33.jpg" alt="TV Show" />
+      <img src="assets/img/34.jpg" alt="TV Show" />
+      <img src="assets/img/35.jpg" alt="TV Show" />
+      <img src="assets/img/36.jpg" alt="TV Show" />
+      <!-- duplicate set for seamless loop -->
+      <img src="assets/img/25.jpg" alt="TV Show" />
+      <img src="assets/img/26.jpg" alt="TV Show" />
+      <img src="assets/img/27.jpg" alt="TV Show" />
+      <img src="assets/img/28.jpg" alt="TV Show" />
+      <img src="assets/img/29.jpg" alt="TV Show" />
+      <img src="assets/img/30.jpg" alt="TV Show" />
+      <img src="assets/img/31.jpg" alt="TV Show" />
+      <img src="assets/img/32.jpg" alt="TV Show" />
+      <img src="assets/img/33.jpg" alt="TV Show" />
+      <img src="assets/img/34.jpg" alt="TV Show" />
+      <img src="assets/img/35.jpg" alt="TV Show" />
+      <img src="assets/img/36.jpg" alt="TV Show" />
+    </div>
+
+    <!-- 3段目 -->
+    <div class="carousel-track track-3">
+      <!-- 画像を2セット並べてループ風にする -->
+      <img src="assets/img/49.jpg" alt="TV Show" />
+      <img src="assets/img/50.jpg" alt="TV Show" />
+      <img src="assets/img/51.jpg" alt="TV Show" />
+      <img src="assets/img/52.jpg" alt="TV Show" />
+      <img src="assets/img/53.jpg" alt="TV Show" />
+      <img src="assets/img/54.jpg" alt="TV Show" />
+      <img src="assets/img/55.jpg" alt="TV Show" />
+      <img src="assets/img/56.jpg" alt="TV Show" />
+      <img src="assets/img/57.jpg" alt="TV Show" />
+      <img src="assets/img/59.jpg" alt="TV Show" />
+      <img src="assets/img/60.jpg" alt="TV Show" />
+      <img src="assets/img/62.jpg" alt="TV Show" />
+      <!-- duplicate set for seamless loop -->
+      <img src="assets/img/49.jpg" alt="TV Show" />
+      <img src="assets/img/50.jpg" alt="TV Show" />
+      <img src="assets/img/51.jpg" alt="TV Show" />
+      <img src="assets/img/52.jpg" alt="TV Show" />
+      <img src="assets/img/53.jpg" alt="TV Show" />
+      <img src="assets/img/54.jpg" alt="TV Show" />
+      <img src="assets/img/55.jpg" alt="TV Show" />
+      <img src="assets/img/56.jpg" alt="TV Show" />
+      <img src="assets/img/57.jpg" alt="TV Show" />
+      <img src="assets/img/59.jpg" alt="TV Show" />
+      <img src="assets/img/60.jpg" alt="TV Show" />
+      <img src="assets/img/62.jpg" alt="TV Show" />
+    </div>
+  </section>
+
+  <!-- --------------------------------------------------------------- -->
+  <!--     タイトル２　TELEPORTとは                                      -->
+  <!-- --------------------------------------------------------------- -->
+  <div class="tp-all__ttl">
+    <h2 class="logo-heading">
+      <img src="assets/img/logo.png" alt="Teleport Logo" class="logo-img">
+      <span class="logo-text">とは</span>
+    </h2>
+  </div>
+
+  <!-- --------------------------------------------------------------- -->
+  <!--     タイトル２　見出し                                   　　　   -->
+  <!-- --------------------------------------------------------------- -->
+  <section class="interactive-section">
+    <!-- 切り替えボタン -->
+<div class="interactive-wrapper">
+  <div class="interactive-tab-container">
+    <div class="tab-block active" data-type="a">
+      <img src="assets/img/mymini.png" alt="Set A" />
+    </div>
+    <div class="tab-block" data-type="b">
+      <img src="assets/img/mybox.png" alt="Set B" />
+    </div>
+  </div>
+
+    <!-- セットA -->
+    <div class="interactive-block active" data-type="a">
+      <div class="image-block">
+        <img src="assets/img/slide01.png" alt="表示画像" class="main-image">
+      </div>
+      <div class="caption-block">
+        <div class="caption-item active" data-img="slide01.png">
+          <div class="caption-title">1.マルチデバイス対応でどこでも視聴が可能</div>
+          <div class="caption-desc">iPhone/スマートフォン/タブレット/PCで視聴可能です。</div>
+        </div>
+        <div class="caption-item" data-img="slide02.png">
+          <div class="caption-title">2.720HDの高画質で大画面テレビで視聴可能</div>
+          <div class="caption-desc">※ＴＶで視聴される際はクロームキャストなどをご使用ください。</div>
+        </div>
+        <div class="caption-item" data-img="slide03.png">
+          <div class="caption-title">3.豊富なチャンネルで多彩な番組を視聴可能</div>
+          <div class="caption-desc">16CH（地上波 8CH・BS 8CH）視聴できます。</div>
+        </div>
+        <div class="caption-item" data-img="slide04.png">
+          <div class="caption-title">4.7日間のタイムシフトで過去の番組も視聴可能</div>
+          <div class="caption-desc">見逃した番組もあとから再生できます。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- セットB -->
+    <div class="interactive-block" data-type="b">
+      <div class="image-block">
+        <img src="assets/img/slide05.png" alt="表示画像" class="main-image">
+      </div>
+      <div class="caption-block">
+        <div class="caption-item active" data-img="slide05.png">
+          <div class="caption-title">1.簡単接続の据え置き型デバイス</div>
+          <div class="caption-desc">テレビの横に置いて簡単に接続できるので難しい操作が必要ありません。</div>
+        </div>
+        <div class="caption-item" data-img="slide06.png">
+          <div class="caption-title">2.1080HDの高画質で大画面テレビで視聴可能</div>
+          <div class="caption-desc">映像はフルHD対応なので大画面のテレビでも楽しめる</div>
+        </div>
+        <div class="caption-item" data-img="slide07.png">
+          <div class="caption-title">3.豊富なチャンネルで多彩な番組を視聴可能</div>
+          <div class="caption-desc">76CH（地上波 14CH・BS/CS 62CH）視聴できます。</div>
+        </div>
+        <div class="caption-item" data-img="slide08.png">
+          <div class="caption-title">4.30日間のタイムシフトで過去の番組も視聴可能</div>
+          <div class="caption-desc">30日のタイムシフトが残っているので見逃した番組もゆっくり観ることができます。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------------------------------------------------- -->
+  <!--     料金とサービス                         　　          　　　   -->
+  <!-- --------------------------------------------------------------- -->
+
+  <div class="tp-all__ttl">
+    <h2>
+      <p style="font-size: 30px;">料金とサービス</p>
+    </h2>
+  </div>
+  <section class="pricing-section">
+    <p class="pricing-description">
+      24時間のトライアル期間があります。<br>
+      MEMBER SHIPに加入すると 1か月間の無料期間をプレゼントします。
+    </p>
+
+    <div class="tab-toggle">
+      <button class="tab-button active" data-type="month">1MONTH</button>
+      <button class="tab-button" data-type="year">1YEAR</button>
+    </div>
+
+    <div class="plans">
+      <div class="plan-card mymini" data-type="month">
+        <h3>MY-MINI PLAN</h3>
+        <p class="channels">地デジ 8Ch<br>BS 8Ch</p>
+        <p class="price">¥2,900</p>
+      </div>
+      <div class="plan-card mybox" data-type="month">
+        <h3>MY-BOX PLAN</h3>
+        <p class="channels">地デジ 14Ch<br>BS/CS 62Ch</p>
+        <p class="price">¥5,800</p>
+      </div>
+
+      <div class="plan-card mymini hidden" data-type="year">
+        <h3>MY-MINI PLAN</h3>
+        <p class="channels">地デジ 8Ch<br>BS 8Ch</p>
+        <p class="price">¥29,000</p>
+      </div>
+      <div class="plan-card mybox hidden" data-type="year">
+        <h3>MY-BOX PLAN</h3>
+        <p class="channels">地デジ 14Ch<br>BS/CS 62Ch</p>
+        <p class="price">¥58,000</p>
+      </div>
+    </div>
+
+    <p class="pricing-description">
+      ※$ドルや₱ペソ、₩ウォンなどでも決済可能ですが、<br>
+      日本円を基準にその日のレートで計算されます。
+    </p>
+
+  </section>
+
+  <!-- --------------------------------------------------------------- -->
+  <!--     よくある質問                           　　          　　　   -->
+  <!-- --------------------------------------------------------------- -->
+
+  <div class="tp-all__ttl">
+    <h2>
+      <p style="font-size: 30px;">よくある質問</p>
+    </h2>
+  </div>
+  <section class="faq-section">
+    <div class="faq-container">
+      <div class="faq-card" data-index="1">
+        <div class="faq-number">01</div>
+        <div class="faq-question"><strong>24時間トライアルとは何ですか？</strong></div>
+        <div class="faq-answer">
+          会員登録前に、24時間無料で視聴をお試しできるサービスです。<br>24時間トライアルからお申し込みいただけます。<br>トライアルでは、視聴可能な画面サイズに制限がございますのでご了承ください。<br>なお、トライアル期間中でもTELEPORTに登録するから、いつでも会員登録が可能です。
+          <br>※本トライアルは、1アカウントにつき1回限りのサービスとなります。
+        </div>
+      </div>
+      <div class="faq-card" data-index="2">
+        <div class="faq-number">02</div>
+        <div class="faq-question"><strong>支払い方法を教えてください。</strong></div>
+        <div class="faq-answer">クレジットカードでのお支払いのみ対応しております。</div>
+      </div>
+      <div class="faq-card" data-index="3">
+        <div class="faq-number">03</div>
+        <div class="faq-question"><strong>新規登録の流れについて教えてください。</strong></div>
+        <div class="faq-answer">
+          TELEPORTへの新規登録はTELEPORTに登録するから行うことができます。<br>過去に登録したことのあるお客様は、新規登録の必要はございません。<br>視聴を再開したいのご確認をお願いします。</div>
+      </div>
+      <div class="faq-card" data-index="4">
+        <div class="faq-number">04</div>
+        <div class="faq-question"><strong>現在利用中のクレジットカードを別のカードに変更したいです。</strong></div>
+        <div class="faq-answer">アカウントページからクレジットカード情報の変更が可能です。</div>
+      </div>
+      <div class="faq-card" data-index="5">
+        <div class="faq-number">05</div>
+        <div class="faq-question"><strong>TIME SHIFTとは何ですか？</strong></div>
+        <div class="faq-answer">TIME SHIFTは、自動録画機能により、TELEPORTの全チャンネル全番組を過去数日間遡って視聴できる機能です。<br>指定期間を過ぎると自動的に削除されます。</div>
+      </div>
+      <div class="faq-card" data-index="6">
+        <div class="faq-number">06</div>
+        <div class="faq-question"><strong>解約したい</strong></div>
+        <div class="faq-answer"></div>
+      </div>
+    </div>
+    <!-- <div class="faq-link">
+  <a href="qa.html" class="faq-button">Q＆Aページへ</a>
+</div> -->
+
+  </section>
+
+  <!-- --------------------------------------------------------------- -->
+  <!--     ユーザーの声                           　　          　　　   -->
+  <!-- --------------------------------------------------------------- -->
+  <div class="tp-all__ttl">
+    <h2>
+      <p style="font-size: 30px;">ユーザーの声</p>
+    </h2>
+  </div>
+
+  <section id="user-voices-section">
+    <div class="user-voice-card-wrapper">
+      <div class="user-voice-card-shadow"></div>
+      <div class="user-voice-card">
+        <div class="user-icon">山</div>
+        <div class="user-info">
+          <h3>山田Tさん</h3>
+          <p>いろんなデバイスに対応しているのがすごく使いやすいです。普段は電車などでも利用しています。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="user-voice-card-wrapper">
+      <div class="user-voice-card-shadow"></div>
+      <div class="user-voice-card">
+        <div class="user-icon">米</div>
+        <div class="user-info">
+          <h3>米山Hさん</h3>
+          <p>タイムシフト機能がかなり重宝しています。時間の定まらない仕事柄見逃すことが多く後でゆっくり観ています。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="user-voice-card-wrapper">
+      <div class="user-voice-card-shadow"></div>
+      <div class="user-voice-card">
+        <div class="user-icon">今</div>
+        <div class="user-info">
+          <h3>今野Uさん</h3>
+          <p>観れるチャンネル数が多いので、日本にいるときの感覚でいろんなチャンネルを楽しめています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer読み込み -->
+  <div id="footer-placeholder"></div>
+
+  <!-- JS読み込み -->
+  <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>

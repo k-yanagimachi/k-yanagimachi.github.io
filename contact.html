@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELEPORT</title>
+    <!-- css読み込み -->
+    <link rel="stylesheet" href="assets/css/style.css?ver=1211">
+    <!-- ファビコン -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="index.html"><img src="assets/img/logo.png" alt="Teleport Logo" class="logo"></a>
+        </div>
+
+        <!-- ハンバーガー メニュー構造 -->
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+
+        <!-- ナビゲーションメニュー本体 -->
+        <div class="menu__box">
+            <ul class="menu__inner">
+                <li><a class="menu__item" href="index.html">TOP</a></li>
+                <li><a class="menu__item" href="qa.html">Q & A</a></li>
+                <li><a class="menu__item" href="contact.html">トライアル</a></li>
+                <li class="menu__contact">
+                    <a class="menu__item" href="payment.html" target="_blank" rel="noopener">メンバーシップ</a>
+                </li>
+            </ul>
+        </div>
+        <p class="menu__bg"></p>
+    </header>
+
+    <div class="tp-contact is-cream-bg">
+        <h2 class="tp-contact__ttl">トライアルお申込み</h2>
+
+        <form action="/" method="post">
+
+            <label for="name">名前<span class="sp">(全角)</span><span class="hissu">【必須】</span></label>
+            <input type="text" id="name" name="name" placeholder="山田太郎" required>
+
+
+            <label for="country">国名<span class="hissu">【必須】</span></label>
+            <select id="country" name="country" required>
+                <option value=""></option>
+                <option value="jp">日本</option>
+                <option value="us">アメリカ</option>
+                <option value="cn">中国</option>
+                <option value="kr">韓国</option>
+                <option value="tw">台湾</option>
+                <option value="hk">香港</option>
+                <option value="sg">シンガポール</option>
+                <option value="th">タイ</option>
+                <option value="vn">ベトナム</option>
+                <option value="ph">フィリピン</option>
+                <option value="my">マレーシア</option>
+                <option value="id">インドネシア</option>
+                <option value="au">オーストラリア</option>
+                <option value="nz">ニュージーランド</option>
+                <option value="gb">イギリス</option>
+                <option value="fr">フランス</option>
+                <option value="de">ドイツ</option>
+                <option value="it">イタリア</option>
+                <option value="es">スペイン</option>
+                <option value="nl">オランダ</option>
+                <option value="se">スウェーデン</option>
+                <option value="ch">スイス</option>
+                <option value="ca">カナダ</option>
+                <option value="mx">メキシコ</option>
+                <option value="br">ブラジル</option>
+                <option value="ru">ロシア</option>
+                <option value="in">インド</option>
+                <option value="sa">サウジアラビア</option>
+                <option value="ae">アラブ首長国連邦</option>
+                <option value="eg">エジプト</option>
+                <option value="za">南アフリカ</option>
+            </select>
+
+            <div class="mail-pass">
+
+                <div class="box">
+                    <label for="email">E-Mail<br class="sp-only"><span class="sp">(半角)</span><span
+                            class="hissu">【必須】</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="box">
+                    <label for="email">E-Mail<br class="sp-only"><span class="sp">(半角) 確認用</span><span
+                            class="hissu">【必須】</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="box">
+                    <label for="password">パスワード作成<br class="sp-only"><span class="sp">(半角英数)</span><span
+                            class="hissu">【必須】</span></label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="box">
+                    <label for="password">パスワード作成<br class="sp-only"><span class="sp">(半角英数) 確認用</span><span
+                            class="hissu">【必須】</span></label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+            </div>
+
+            <button type="submit" class="submit">内容を確認して送信する</button>
+        </form>
+    </div>
+
+    <script src="assets/js/hum.js"></script>
+    <script src="assets/js/accordion.js"></script>
+
+
+    <footer class="tp-footer">
+        <div class="tp-footer__inner">
+            <div class="tp-footer__logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="TELEPORTロゴ" width="150">
+                </a>
+            </div>
+
+            <div class="tp-footer__company">
+                <p>運営会社：TELEPORT株式会社</p>
+                <p>代表者：山田 太郎</p>
+                <p>住所：〒123-4567 東京都渋谷区渋谷1-1-1 TELEPORTビル</p>
+                <p>メール：<a href="mailto:info@teleport.co.jp">info@teleport.co.jp</a></p>
+            </div>
+
+            <div class="tp-footer__copy">
+                <p>&copy; 2025 TELEPORT. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

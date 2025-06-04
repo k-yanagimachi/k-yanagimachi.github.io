@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELEPORT</title>
+    <!-- css読み込み -->
+    <link rel="stylesheet" href="assets/css/style.css?ver=111111111111123">
+    <!-- ファビコン -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="index.html"><img src="assets/img/logo.png" alt="Teleport Logo" class="logo"></a>
+        </div>
+
+        <!-- ハンバーガー メニュー構造 -->
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+
+        <!-- ナビゲーションメニュー本体 -->
+        <div class="menu__box">
+            <ul class="menu__inner">
+                <li><a class="menu__item" href="index.html">TOP</a></li>
+                <li><a class="menu__item" href="qa.html">Q & A</a></li>
+                <li><a class="menu__item" href="contact.html">トライアル</a></li>
+                <li class="menu__contact">
+                    <a class="menu__item" href="payment.html" target="_blank" rel="noopener">メンバーシップ</a>
+                </li>
+            </ul>
+        </div>
+        <p class="menu__bg"></p>
+    </header>
+
+    <div class="tp-qa__head">
+        <div class="tp-container">
+            <h1>Q <span>&</span> A</h1>
+        </div>
+    </div>
+
+    <div class="tp-qa-outline">
+        <div class="tp-container">
+            <div class="tp-qa__contents">
+                <a href="#qa01" class="tp-qa__item qa01">
+                    <img src="assets/img/icon-01.png" alt="" width="100" height="100">
+                    <p>初めてのお客様</p>
+                </a>
+                <a href="#qa02" class="tp-qa__item qa02">
+                    <img src="assets/img/icon-02.png" alt="" width="100" height="100">
+                    <p>会員登録について<br>ご契約の再会</p>
+                </a>
+                <a href="#qa03" class="tp-qa__item qa03">
+                    <img src="assets/img/icon-03.png" alt="" width="100" height="100">
+                    <p>お支払い<br>アカウント設定</p>
+                </a>
+                <a href="#qa04" class="tp-qa__item qa04">
+                    <img src="assets/img/icon-04.png" alt="" width="100" height="100">
+                    <p>視聴可能な<br>デバイス</p>
+                </a>
+                <a href="#qa05" class="tp-qa__item qa05">
+                    <img src="assets/img/icon-05.png" alt="" width="100" height="100">
+                    <p>機能について</p>
+                </a>
+                <a href="#qa06" class="tp-qa__item qa06">
+                    <img src="assets/img/icon-06.png" alt="" width="100" height="100">
+                    <p>視聴に関する<br>問題や不具合</p>
+                </a>
+                <a href="#qa07" class="tp-qa__item qa07">
+                    <img src="assets/img/icon-07.png" alt="" width="100" height="100">
+                    <p>解約について</p>
+                </a>
+                <a href="#qa08" class="tp-qa__item qa08">
+                    <img src="assets/img/icon-08.png" alt="" width="100" height="100">
+                    <p>その他</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------
+初めてのお客様
+---------------------------------------------->
+    <div class="accordion" id="ac01">
+        <div class="tp-container">
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    TELEPORTとは？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">TELEPORTは、世界中どこからでもハイビジョン映像で日本のテレビ番組を視聴できる、会員登録制のサービスです。
+                    インターネットに接続できる環境であれば、日本以外の国からいつでも視聴が可能です。※日本国内での視聴はできません。詳しくはTELEPORTの機能をご覧ください。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    どうやって視聴するのですか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    会員登録後、インターネットに接続したiPhone・iPad・Androidスマートフォン・タブレット・パソコン（Windows・Mac）で視聴が可能です。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    24時間トライアルとは何ですか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    会員登録前に、24時間無料で視聴をお試しできるサービスです。24時間トライアルからお申し込みいただけます。トライアルでは、視聴可能な画面サイズに制限がございますのでご了承ください。なお、トライアル期間中でもTELEPORTに登録するから、いつでも会員登録が可能です。
+                    インターネットに接続できる環境であれば、日本以外の国からいつでも視聴が可能です。※日本国内での視聴はできません。詳しくはTELEPORTの機能をご覧ください。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    24時間トライアルに申し込みができません。
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">24時間トライアルにお申し込みができない場合、以下の点をご確認ください。
+
+                    <br><br>1. すでにトライアルを利用していないか
+                    24時間トライアルは、1アカウントにつき1回限りのサービスです。過去に申し込んでいる場合、再度の利用はできません。
+                    <br>2. 登録情報に誤りがないか
+                    メールアドレスの入力間違いがないかご確認ください。
+                    <br>3. ネットワーク環境を確認
+                    一時的な通信障害やネットワークの問題で申し込みが完了しないことがあります。Wi-Fiやモバイル回線の接続状況をご確認ください。
+                    <br>4. 迷惑メールフォルダを確認
+                    申し込み完了のメールが迷惑メールフォルダに振り分けられている場合があります。
+
+                    <br><br>上記を試しても解決しない場合は、カスタマーサポートまでご連絡ください。
+                    インターネットに接続できる環境であれば、日本以外の国からいつでも視聴が可能です。※日本国内での視聴はできません。詳しくはTELEPORTの機能をご覧ください。
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    プランについて教えてください。
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">TELEPORTは、世界中どこからでもハイビジョン映像で日本のテレビ番組を視聴できる、会員登録制のサービスです。
+                    インターネットに接続できる環境であれば、日本以外の国からいつでも視聴が可能です。※日本国内での視聴はできません。詳しくはTELEPORTの機能をご覧ください。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    支払い方法を教えてください。
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">クレジットカードでのお支払いのみ対応しております。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    途中解約での返金はありますか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">お客様都合による解約の返金は対応しておりません。
+                    インターネットに接続できる環境であれば、日本以外の国からいつでも視聴が可能です。※日本国内での視聴はできません。詳しくはTELEPORTの機能をご覧ください。</div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------
+会員登録についてご契約の再会
+---------------------------------------------->
+    <div class="accordion" id="ac02">
+        <div class="tp-container">
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    新規登録の流れについて教えてください。
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">TELEPORTへの新規登録はTELEPORTに登録するから行うことができます。
+                    <br>過去に登録したことのあるお客様は、新規登録の必要はございません。視聴を再開したいのご確認をお願いします。
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    登録が完了できません。
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    登録が完了できない場合、以下の点をご確認ください。
+                    <br>1. 入力情報に誤りがないかご確認ください
+                    メールアドレスの入力間違いがないかご確認ください。
+
+                    <br><br>2.すでに登録済みの可能性
+                    以前に同じメールアドレスで登録していないかご確認ください。もしパスワードを忘れた場合は、パスワードのリセットをお試しください。
+
+                    <br><br>3.クレジットカード情報に不備がないかご確認ください。
+                    有効期限やカード番号の入力ミスがないか、カードの利用可能状態などをご確認ください。
+
+                    <br><br>上記を試しても登録できない場合は、カスタマーサポートにご連絡ください。
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    登録時に「ご入力いただいたメールアドレスは既に使用されています。」と表示されます。
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    既にアカウントの登録が行われています。ログインページからメールアドレスとパスワードを入力し、ログインを行ってください。
+
+                    <br><br>パスワードを忘れた場合は、パスワードを変更/確認したいをご確認ください。
+                    <br>以前TELEPORTをご利用されたことのある場合、解約されているアカウントにログインをし、契約再開のお手続きをいただくことで視聴が可能です。詳しくは、視聴を再開したい をご確認ください。
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    視聴を再開したい。
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">解約されているアカウントにログインをし、契約再開のお手続きをいただくことで視聴が可能です。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    利用できる支払い方法を教えてください。
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">クレジットカードでのお支払いのみ対応しております。</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!----------------------------------------------
+お支払いアカウント設定
+---------------------------------------------->
+    <div class="accordion" id="ac03">
+        <div class="tp-container">
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    利用できる支払い方法を教えてください。
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">クレジットカードでのお支払いのみ対応しております。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    毎月の請求日はいつですか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    毎月のご請求日は、ご登録いただいたお日にちにより異なります。
+
+                    <br><br>1月10日に登録または再開をされた場合は、1月10日に30日分(1月10日〜 2月8日まで）のご請求が発生いたします。お客様の詳しい請求日は、アカウントページにてご確認ください。
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    現在利用中のクレジットカードを別のカードに変更したいです。
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">アカウントページからクレジットカード情報の変更が可能です。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    解約したのに請求が発生している
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    解約したのに請求が発生している場合、カスタマーサポートにて確認いたしますので、以下の情報をお送りください。
+                    <br>・ご登録者様のお名前
+                    <br>・生年月日（西暦）
+                    <br>・ご登録のメールアドレス
+                    <br>・請求が発生している日付と金額
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    お支払いが完了できず、視聴が止まってしまいました。
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    有効なお支払い情報へ更新後、請求の確認が取れ次第、アカウントが有効な状態になります。
+                    ※請求の確認が取れない原因は、クレジットカード会社にご確認をお願いします。
+
+                    <br><br>以下の方法でお支払い情報を更新してください。
+                    <br>1. アカウントページにアクセスをして、登録の メールアドレスとパスワードでログインします
+                    <br>2. アカウントページ内［決済情報を更新する］ボタンを押します
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    領収書は発行できますか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">いいえ、領収書の発行はしておりません。 ご登録のクレジットカードのご利用明細を領収書の代わりにご利用ください。 または アカウントページ
+                    内の「支払履歴を確認する」から、現在までに発生している請求を確認できます。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    身に覚えのない請求がある/二重請求されている
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    身に覚えのない請求がある/二重請求されている場合、カスタマーサポートにて確認いたしますので、以下の情報をお送りください。
+                    <br>・ご登録者様のお名前
+                    <br>・生年月日（西暦）
+                    <br>・ご登録のメールアドレス
+                    <br>・請求が発生している日付と金額
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    プランを変更したい
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content"></div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    パスワードを変更/確認したい
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content"></div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    アカウント情報を更新したい
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">アカウント情報を更新したい</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    メールアドレスを変更したい
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">メールアドレスを変更したい</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    視聴可能期間を確認したい
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">アカウントページ 内の「ご契約期間」から、確認できます。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    パスワードを忘れた
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">パスワードを忘れた</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    ログインできない
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">ログインできない</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    TELEPORTからのメールが届かない
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">TELEPORTからのメールが届かない</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!----------------------------------------------
+視聴可能なデバイス
+---------------------------------------------->
+    <div class="accordion" id="ac04">
+        <div class="tp-container">
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    対応デバイス
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">インターネットに接続したiPhone・iPad・Androidスマートフォン・タブレット・パソコン（Windows・Mac）で視聴が可能です。
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    パソコンでTELEPORTを視聴する
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">●画像で説明</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    再生中の操作方法
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">●画像で説明</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    スマートフォン・タブレットでTELEPORTを視聴する
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">●画像で説明</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    再生中の操作方法
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">●画像で説明</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    Airplayを使って視聴する
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">AirPlay を使い、iPhone／iPad／iPod touch から Apple TV に映像を映して視聴できます。
+                    ●画像で説明(以下参考)
+                    https://help.hulu.jp/hc/ja/articles/360044685773--iPhone-iPad-iPod-touch-AirPlay-を使ってHuluを視聴する</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    TVで見るにはどうしたら良いですか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">●画像で説明</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    日本国内で視聴することは可能ですか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">日本国内で視聴することはできません。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    視聴できない国・地域はありますか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content"></div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    スマートフォン、タブレット、パソコンからケーブルを経由してテレビ等への出力はできますか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content"></div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    必要な回線速度を教えてください
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    インターネットの場合は下り800kbps、モバイル通信の場合は5Gで快適にご視聴いただけます。速度の計測は下記サイトで行えます。http://www.speedtest.net/</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    複数の端末で視聴できますか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">1つのアカウントで様々な端末での視聴は可能ですが、複数端末で同時にログインすることはできません。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    スマートフォンで視聴した場合の通信量はどのくらいですか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">視聴時間にもよりますので、データ制限プランをご契約の方はWi-Fiでのご利用をお勧めします。</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!----------------------------------------------
+機能について
+---------------------------------------------->
+    <div class="accordion" id="ac05">
+        <div class="tp-container">
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    リアルタイム視聴とは何ですか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">海外に居ながら、日本で放送されている番組をリアルタイムで視聴できるサービスです。※日本国内での視聴はできません。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    リアルタイム視聴をする
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">●画像で説明</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    見たい番組を探す
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">●画像で説明</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    リアルタイム視聴はお気に入りに追加できますか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">できません。お気に入り機能はTIME SHIFTにのみ対応しております。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    視聴予約はできますか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">視聴予約はできません。見逃してしまった番組は、ぜひTIME SHIFT機能をご利用ください。
+                    <br>※TIME SHIFTは、自動録画機能により、TELEPORTの全チャンネル全番組（地上波8ch / BS4ch）を過去5日間遡って視聴できる機能です。
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    TIME SHIFTとは何ですか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">TIME SHIFTは、自動録画機能により、TELEPORTの全チャンネル全番組（地上波8ch /
+                    BS・CS8ch）を過去5日間遡って視聴できる機能です。5日間を過ぎると自動的に削除されます。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    TIME SHIFTを視聴する
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">●画像で説明</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    TIME SHIFTで見たい番組を探す
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">●画像で説明</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    お気に入り機能
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">TIME SHIFTでは、気になる番組をお気に入りに登録することができます。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    録画することはできますか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">できません。自動録画（TIME SHIFT）機能により、TELEPORTの全チャンネル全番組（地上波8ch /
+                    BS4ch）を過去5日間遡って視聴できますので、そちらをご利用ください。</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    1つのアカウントで同時視聴は可能ですか？
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">1つのアカウントで様々な端末での視聴は可能ですが、複数端末で同時にログインすることはできません。</div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------
+視聴に関する問題や不具合
+---------------------------------------------->
+    <div class="accordion" id="ac06">
+        <div class="tp-container">
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    視聴ができない
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    ログイン後に視聴ができない場合、アカウントページから、お支払いが完了しているかご確認ください。
+                    お支払いが完了している場合、以下の方法をお試し下さい。
+
+                    <br><br>1.IPhone・スマートフォンでご視聴の場合
+                    Wi-Fiでご利用の場合は、5G通信に切り替えてご確認下さい。5G通信でご利用の場合、ブラウザを一旦閉じて、お試し下さい。
+
+                    <br><br>2.パソコンでご視聴の場合
+                    Wi-Fiでご利用の場合は、LANケーブルでの接続をお試し下さい。また、ブラウザのアップデート、パソコンの再起動もお試し下さい。
+
+                    <br><br>それでも視聴ができない場合は、カスタマーサポートにて確認いたしますので、以下の情報をお送りください。
+                    <br>・ご登録者様のお名前
+                    <br>・生年月日（西暦）
+                    <br>・ご登録のメールアドレス
+
+                    <br><br>※日本国内での視聴はできませんのでご注意ください。
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    エラーコード
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">エラーコードの表示/対応策がある場合は記載 *要確認</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!----------------------------------------------
+解約について
+---------------------------------------------->
+    <div class="accordion" id="ac07">
+        <div class="tp-container">
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    解約したい
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content"></div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    解約後の視聴可能期間について
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">解約について</div>
+            </div>
+        </div>
+    </div>
+
+<!----------------------------------------------
+その他
+---------------------------------------------->
+    <div class="accordion" id="ac08">
+        <div class="tp-container">
+            <div class="accordion-item">
+                <div class="accordion-title">
+                    それでも解決しない場合
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    お問い合わせの前に、よくある質問をご確認ください。解決しない場合は、こちらからお問い合わせ内容を送信してください。カスタマーサポート担当者が順次対応いたします。返信には数日かかる場合がございますので、予めご了承くださいませ。
+                    <br>カスタマーサポート営業時間
+                    <br>10時〜19時（JST）　土日祝日を除く<br><br>
+
+
+                    <div class="tp-qa__form">
+                        <form action="/" method="post">
+                            <label for="name">名前<span class="hissu">*</span></label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="company">会社名<span class="sp">(屋号)</span></label>
+                            <input type="text" id="company" name="company">
+
+                            <label for="email">メールアドレス<span class="hissu">*</span></label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="tel">電話番号<span class="hissu">*</span></label>
+                            <input type="tel" id="tel" name="tel" required>
+
+                            <label for="content">問い合わせ内容<span class="hissu">*</span></label>
+                            <textarea name="content" id="content"></textarea>
+
+                            <button type="submit" class="submit">送信する</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer読み込み -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JS読み込み -->
+    <script src="assets/js/hum.js"></script>
+    <script src="assets/js/accordion.js"></script>
+    <script src="assets/js/switch.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+
+</body>
+
+</html>

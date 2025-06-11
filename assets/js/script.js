@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// --------------------------------------------------------------- //
+//               タイトル２　TELEPORTとは 切り替え　　　　　　      //
+// --------------------------------------------------------------- //
 document.addEventListener("DOMContentLoaded", function () {
   const tabBlocks = document.querySelectorAll('.tab-block');
   const contentBlocks = document.querySelectorAll('.interactive-block');
@@ -21,7 +24,51 @@ document.addEventListener("DOMContentLoaded", function () {
       tabBlocks.forEach(b => b.classList.remove('active'));
       block.classList.add('active');
 
-      // 下のブロック切り替え
+      // 下のブロック切替
+      contentBlocks.forEach(content => {
+        content.classList.toggle('active', content.dataset.type === type);
+      });
+
+      // 🔽 タイトル切り替え（追加部分）
+      const titles = document.querySelectorAll('.interactive-title');
+      titles.forEach(title => {
+        title.classList.toggle('hidden', title.dataset.type !== type);
+      });
+    });
+  });
+
+  // キャプション画像切替
+  document.querySelectorAll(".interactive-block").forEach(block => {
+    const image = block.querySelector(".main-image");
+    const captions = block.querySelectorAll(".caption-item");
+
+    captions.forEach(caption => {
+      caption.addEventListener("click", () => {
+        captions.forEach(c => c.classList.remove("active"));
+        caption.classList.add("active");
+        image.src = "assets/img/" + caption.dataset.img;
+      });
+    });
+  });
+});
+
+// --------------------------------------------------------------- //
+//               料金とサービス 切り替え　　　　　　          　　　   //
+// --------------------------------------------------------------- //
+
+document.addEventListener("DOMContentLoaded", function () {
+  const tabBlocks = document.querySelectorAll('.tab-priceblock');
+  const contentBlocks = document.querySelectorAll('.interactive-priceblock');
+
+  tabBlocks.forEach(block => {
+    block.addEventListener('click', () => {
+      const type = block.dataset.type;
+
+      // タブの背景切り替え
+      tabBlocks.forEach(b => b.classList.remove('active'));
+      block.classList.add('active');
+
+      // 下のブロック切替
       contentBlocks.forEach(content => {
         content.classList.toggle('active', content.dataset.type === type);
       });
@@ -46,9 +93,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// --------------------------------------------------------------- //
-//               料金とサービス 切り替え　　　　　　          　　　   //
-// --------------------------------------------------------------- //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".tab-button");
   const cards = document.querySelectorAll(".plan-card");
@@ -105,4 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+
 

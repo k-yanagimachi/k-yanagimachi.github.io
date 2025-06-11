@@ -28,16 +28,16 @@
         </div>
     </header>
 
-    <div class="tp-contact is-cream-bg">
+    <!-- <div class="tp-contact is-cream-bg">
         <h2 class="tp-contact__ttl">メンバーシップ加入</h2>
 
         <form action="/" method="post">
             <label for="plan">プラン選択<span class="hissu">【必須】</span></label>
             <select id="plan" name="plan" required>
                 <option value=""></option>
-                <option value="MY-MINI PLAN">MY-MINI PREMIUM</option>
-                <option value="MY-BOX PLAN">MY-BOX STANDARD</option>
-                <option value="MY-BOX PLAN">MY-BOX PREMIUM</option>
+                <option value="MY-MINI PREMIUM">MY-MINI PREMIUM</option>
+                <option value="MY-BOX STANDARD">MY-BOX STANDARD</option>
+                <option value="MY-BOX PREMIUM">MY-BOX PREMIUM</option>
             </select>
 
             <label for="plan">決済期間選択<span class="hissu">【必須】</span></label>
@@ -50,7 +50,35 @@
 
             <button type="submit" class="submit">決済</button>
         </form>
+    </div> -->
+
+
+
+    <div class="tp-contact is-cream-bg">
+        <h2 class="tp-contact__ttl">メンバーシップ加入</h2>
+
+        <form onsubmit="return false;">
+            <label for="planSelect">プラン選択<span class="hissu">【必須】</span></label>
+            <select id="planSelect" name="plan" required>
+                <option value=""></option>
+                <option value="MY-MINI PREMIUM">MY-MINI PREMIUM</option>
+                <option value="MY-BOX STANDARD">MY-BOX STANDARD</option>
+                <option value="MY-BOX PREMIUM">MY-BOX PREMIUM</option>
+            </select>
+
+            <label for="periodSelect">決済期間選択<span class="hissu">【必須】</span></label>
+            <select id="periodSelect" name="period" required>
+                <option value=""></option>
+                <option value="1MONTH">1MONTH</option>
+                <option value="1YEAR">1YEAR</option>
+            </select>
+
+            <button type="button" class="submit" onclick="handlePayment()">決済</button>
+        </form>
     </div>
+
+
+
 
 
     <footer class="tp-footer">
@@ -73,6 +101,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- JS読み込み -->
+    <script src="assets/js/payment.js"></script>
 </body>
 
 </html>

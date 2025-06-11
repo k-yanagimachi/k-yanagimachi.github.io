@@ -170,6 +170,7 @@
   <!-- --------------------------------------------------------------- -->
   <!--     タイトル２　TELEPORTとは                                      -->
   <!-- --------------------------------------------------------------- -->
+
   <div class="tp-all__ttl">
     <h2 class="logo-heading">
       <img src="assets/img/logo.png" alt="Teleport Logo" class="logo-img">
@@ -193,6 +194,9 @@
       </div>
 
       <!-- セットA -->
+      <div class="interactive-title" data-type="a" style="text-align: center;">
+        スマホでどこでも日本のテレビ番組を観れる！
+      </div>
       <div class="interactive-block active" data-type="a">
         <div class="image-block">
           <img src="assets/img/slide01.png" alt="表示画像" class="main-image">
@@ -218,6 +222,9 @@
       </div>
 
       <!-- セットB -->
+      <div class="interactive-title hidden" data-type="b" style="text-align: center;">
+        据え置き型専用デバイスで大画面テレビに接続視聴！
+      </div>
       <div class="interactive-block" data-type="b">
         <div class="image-block">
           <img src="assets/img/slide05.png" alt="表示画像" class="main-image">
@@ -233,7 +240,8 @@
           </div>
           <div class="caption-item" data-img="slide07.png">
             <div class="caption-title">3.豊富なチャンネルで多彩な番組を視聴可能</div>
-            <div class="caption-desc">BOX-Aプランでは20CH（地上波 14CH・BS/CS 6CH）,<br>BOX-Bプランでは76CH（地上波 14CH・BS/CS 62CH）視聴できます。</div>
+            <div class="caption-desc">BOX-Aプランでは20CH（地上波 14CH・BS/CS 6CH）,<br>BOX-Bプランでは76CH（地上波 14CH・BS/CS 62CH）視聴できます。
+            </div>
           </div>
           <div class="caption-item" data-img="slide08.png">
             <div class="caption-title">4.30日間のタイムシフトで過去の番組も視聴可能</div>
@@ -258,50 +266,80 @@
       MEMBER SHIPに加入すると 1か月間の無料期間をプレゼントします。
     </p>
 
-    <div class="tab-toggle">
-      <button class="tab-button active" data-type="month">1MONTH</button>
-      <button class="tab-button" data-type="year">1YEAR</button>
-    </div>
+    <section class="interactive-section">
+      <!-- 切り替えボタン -->
+      <div class="interactive-wrapper">
+        <div class="interactive-tab-container">
+          <div class="tab-priceblock active" data-type="a">
+            <img src="assets/img/mymini.png" alt="Set A" />
+          </div>
+          <div class="tab-priceblock" data-type="b">
+            <img src="assets/img/mybox.png" alt="Set B" />
+          </div>
+        </div>
 
-    <div class="plans">
-      <div class="plan-card mymini" data-type="month">
-        <h3>MY-MINI PLAN</h3>
-        <p class="channels">地デジ 8Ch<br>BS 8Ch</p>
-        <p class="price">¥2,900</p>
-      </div>
-      <div class="plan-card mybox-a" data-type="month">
-        <h3>MY-BOX-A PLAN</h3>
-        <p class="channels">地デジ 14Ch<br>BS/CS 6Ch</p>
-        <p class="price">¥1,800</p>
-      </div>
-      <div class="plan-card mybox-b" data-type="month">
-        <h3>MY-BOX-B PLAN</h3>
-        <p class="channels">地デジ 14Ch<br>BS/CS 62Ch</p>
-        <p class="price">¥5,800</p>
-      </div>
 
-      <div class="plan-card mymini hidden" data-type="year">
-        <h3>MY-MINI PLAN</h3>
-        <p class="channels">地デジ 8Ch<br>BS 8Ch</p>
-        <p class="price">¥29,000</p>
-      </div>
-      <div class="plan-card mybox-a hidden" data-type="year">
-        <h3>MY-BOX-A PLAN</h3>
-        <p class="channels">地デジ 14Ch<br>BS/CS 6Ch</p>
-        <p class="price">¥18,000</p>
-      </div>
-      <div class="plan-card mybox-b hidden" data-type="year">
-        <h3>MY-BOX-B PLAN</h3>
-        <p class="channels">地デジ 14Ch<br>BS/CS 62Ch</p>
-        <p class="price">¥58,000</p>
-      </div>
-    </div>
+        <!-- セットA -->
+        <div class="tab-toggle">
+          <button class="tab-button active" data-type="month">1MONTH</button>
+          <button class="tab-button" data-type="year">1YEAR</button>
+        </div>
+<div class="interactive-priceblock active" data-type="a">
+        <div class="plans">
+          <div class="plan-card mymini-premium" data-type="month">
+            <h3>MY-MINI PREMIUM</h3>
+            <p class="channels"><a style="color: crimson; font-size: 40px;">76CH</a><br>-地デジ 8Ch<br>-BS 8Ch</p>
+            <p class="price">$32(₱1,800)</p>
+          </div>
 
-    <p class="pricing-description">
-      ※$ドルや₱ペソ、₩ウォンなどでも決済可能ですが、<br>
-      日本円を基準にその日のレートで計算されます。
-    </p>
+          <div class="plan-card mymini-premium hidden" data-type="year">
+            <h3>MY-MINI PREMIUM</h3>
+            <p class="channels"><a style="color: crimson; font-size: 40px;">76CH</a><br>-地デジ 8Ch<br>-BS 8Ch</p>
+            <p class="price">$320(₱18,000)</p>
+          </div>
+        </div>
+</div>
 
+
+        <!-- セットB -->
+        <div class="tab-toggle hidden">
+          <button class="tab-button" data-type="month">1MONTH</button>
+          <button class="tab-button" data-type="year">1YEAR</button>
+        </div>
+
+<div class="interactive-priceblock" data-type="b">
+        <div class="plans">
+          <div class="plan-card mybox-standard" data-type="month">
+            <h3>MY-BOX STANDARD</h3>
+            <p class="channels"><a style="color: crimson; font-size: 40px;">20CH</a><br>-地デジ 8Ch<br>-BS/CS 12Ch</p>
+            <p class="price">$26(₱1,500)</p>
+          </div>
+          <div class="plan-card mybox-premium" data-type="month">
+            <h3>MY-BOX PREMIUM</h3>
+            <p class="channels"><a style="color: crimson; font-size: 40px;">76CH</a><br>-地デジ 14Ch<br>-BS/CS 62Ch</p>
+            <p class="price">$38(₱2,200)</p>
+          </div>
+
+          <div class="plan-card mybox-standard hidden" data-type="year">
+            <h3>MY-BOX STANDARD</h3>
+            <p class="channels"><a style="color: crimson; font-size: 40px;">20CH</a><br>-地デジ 8Ch<br>-BS/CS 12Ch</p>
+            <p class="price">$260(₱15,000)</p>
+          </div>
+          <div class="plan-card mybox-premium hidden" data-type="year">
+            <h3>MY-BOX PREMIUM</h3>
+            <p class="channels"><a style="color: crimson; font-size: 40px;">76CH</a><br>-地デジ 14Ch<br>-BS/CS 62Ch</p>
+            <p class="price">$380(₱22,000)</p>
+          </div>
+        </div>
+</div>
+
+
+        <p class="pricing-description">
+          ※$ドルや₱ペソ、₩ウォンなどでも決済可能ですが、<br>
+          日本円を基準にその日のレートで計算されます。
+        </p>
+
+    </section>
   </section>
 
   <!-- --------------------------------------------------------------- -->
